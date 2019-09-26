@@ -1,0 +1,59 @@
+<!--  -->
+<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+
+<mat-card>
+<div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+
+  <div  fxFlex="20%" >
+      <div >
+          <span> <p class="title" routerLink='/home'>{{title}}</p></span>
+        </div>
+  </div>
+
+  <div fxFlex >
+      <form [formGroup]="searchForm" class="searchbar" (ngSubmit)="searchItem()">
+         
+          <mat-form-field>
+            <mat-icon class="searchicon" matPrefix>search</mat-icon><input placeholder="What Your Looking For..?" matInput
+              formControlName="search" [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete">
+            </mat-autocomplete>
+          </mat-form-field>
+          <button class="searchbtn" mat-flat-button color="primary" >Search</button>
+       
+        </form>
+
+  </div>
+
+  <div fxFlex="10%" >
+      <div *ngIf="isLoggedIn" >
+     
+          <mat-icon matPrefix class="pimg" routerLink="/cart/id">shopping_cart</mat-icon>{{qtyCartMapping.size}}
+          <!-- <mat-icon matPrefix class="pimg">account_circle</mat-icon> -->
+          <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon class="AccImg">account_circle</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/myorders">
+              <span>My Orders</span>
+            </button>
+            <button mat-menu-item (click)="logOut()">
+              <span>Log Out</span>
+            </button>
+          </mat-menu> 
+      </div>
+      <div *ngIf="!isLoggedIn" >
+        <button class="searchbtn" mat-flat-button color="primary" routerLink="/login">Login/Signup </button>
+      </div>
+  </div>
+</div>
+
+</mat-card>
+<mat-divider></mat-divider>
+
+

@@ -1,0 +1,75 @@
+.backgrd{
+    height:600px;
+    background: url('../../../assets/images/loginBackground-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.example-card{
+    width: 25%;
+    position: absolute;
+    margin-left:60%;
+    margin-top:15px;
+    opacity: 0.8;
+}
+
+.example-full-width{
+   margin-left: 20px;
+   width: 200px;
+}
+.loginbtn{
+    text-align: center;
+}
+.forgotlink{
+    text-decoration: none;
+    color: blue;
+}
+.chkbx{
+    color:blue
+}
+.txtleft{
+    float: left;
+    width:40%;
+}
+.logintxt{
+    text-decoration: none;
+    color: orange;
+    cursor: pointer;
+}
+.txtright{
+     float:right;
+     width:60%;
+     text-align: right;
+     padding: 18px 0%;
+}
+.clear{ clear:both;}
+
+.example-full-width{
+   margin-left: 20px;
+   width: 200px;
+}
+.loginbtn{
+    text-align: center;
+   
+}
+.forgotlink{
+    text-decoration: none;
+    color: blue;
+}
+.chkbx{
+    color:blue
+}
+.txtleft{
+    float: left;
+    width:40%;
+}
+.signuptxt{
+    text-decoration: none;
+    color: orange;
+}
+.txtright{
+     float:right;
+     width:60%;
+     text-align: right;
+     padding: 18px 0%;
+}
+.clear{ clear:both;}

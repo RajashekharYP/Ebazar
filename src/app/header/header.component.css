@@ -1,0 +1,36 @@
+.searchbtn{
+    margin-top: 12px;
+    margin-left: 10px;
+}
+.searchbar{
+    margin-left: 200px;
+}
+.pimg{
+    font-size: 35px;
+    padding: 2px;
+    margin-left: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.AccImg{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+/* .profile{
+    margin-left: 300px;
+} */
+.title{
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    color: orange;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 15px 0px 0px 15px
+}
+.searchicon{
+    font-size: 28px;
+}
+
+.mat-card{
+    padding:5px;
+}

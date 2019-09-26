@@ -1,0 +1,39 @@
+<div class="container">
+  <mat-card>
+    <!-- <div class="sort">
+      <span>Sort By:</span> &nbsp;
+      <span>
+        <mat-icon (click)="ratingFiter()">swap_vertical</mat-icon>Ratings
+      </span>&nbsp;
+      <span>
+        <mat-icon>swap_vertical</mat-icon>Price
+      </span>
+    </div> -->
+
+    <div fxLayout="row wrap" fxLayoutGap="12px">
+
+      <div class="display" *ngFor="let p of products">
+        <mat-card>
+          <h2>{{p.name}}</h2>
+          <img style="width: 200px; height:220px;" src="{{p.imagePath}}">
+          <br>
+          <p class="delivery"> <mat-icon class=" deliIcon">room</mat-icon>Free Delivery</p>
+          <span class="price">
+            <mat-icon></mat-icon>{{p.price |currency:'&#8377;'}}
+          </span>
+
+          <span>
+            <mat-icon class="rating">star</mat-icon>{{p.rating}}
+          </span>&nbsp;
+          <div>
+            <button mat-raised-button class="viewbtn" routerLink="/view/id" (click)="viewProduct(p)">View</button>&nbsp;&nbsp;
+            <button mat-raised-button color="primary" (click)="addcart(p)">Add Cart</button>
+          </div>
+
+        </mat-card>
+
+      </div>
+    </div>
+  </mat-card>
+
+</div>

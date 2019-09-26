@@ -1,0 +1,20 @@
+.display{
+    border-radius:5px; 
+    margin:5px 0%;
+}
+.sort{
+    text-align: right;
+}
+.rating{
+  margin-left: 60px;
+  font-size: 18px;
+}
+.delivery{
+  font-size: 10px;
+  color: green;
+}
+.deliIcon{
+  color: blue;
+  font-size: 22px;
+
+}

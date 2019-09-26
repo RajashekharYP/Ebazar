@@ -1,0 +1,56 @@
+<div class="backgrd">
+  <mat-card class="example-card">
+  <mat-card-header>
+      <span class="txtleft"><mat-card-title><h3>Register</h3></mat-card-title></span>
+    <span class="txtright"><mat-card-title >Have An Account?<a class="logintxt" routerLink="/login"> LogIn</a></mat-card-title></span>
+    <div class="clear"></div>
+  </mat-card-header>
+  <mat-card-content>
+    <form class="example-form"  [formGroup]="RegistrationForm">
+      <table  cellspacing="0">
+        <tr>
+          <td><p>
+            <mat-form-field class="example-full-width">
+            <input matInput placeholder = "Enter Your Name"  formControlName="name" required>
+            <mat-error *ngIf="RegistrationForm.get('name').invalid">{{getUsernameErrorMessage()}}</mat-error>
+          </mat-form-field></p>
+          </td>
+        </tr>
+        <td>
+          <p>
+          <mat-form-field class="example-full-width">
+          <input matInput placeholder="Mail Id" formControlName="email"  required>
+          <mat-error *ngIf="RegistrationForm.get('email').invalid">{{getEmailErrorMessage()}}</mat-error>
+        </mat-form-field></p>
+        </td>
+        <tr>
+        <td>
+          <p><mat-form-field class="example-full-width">
+          <input matInput placeholder="Password" type="password" formControlName="password"  required>
+          <mat-error *ngIf="RegistrationForm.get('password').invalid">{{getPasswordErrorMessage()}}</mat-error>
+        </mat-form-field></p></td>
+      </tr>
+      <tr>
+        <td><p><mat-form-field class="example-full-width">
+          <input matInput placeholder="Re-type Password" type="password" formControlName="repassword" required>
+          <!-- <mat-error *ngIf="RegistrationForm.get('name').invalid">{{getRePasswordErrorMessage()}}</mat-error> -->
+        </mat-form-field></p></td>
+      </tr>
+      <tr>
+         <td> <p>
+              <mat-radio-group  formControlName="role"  aria-label="Select an option">
+                <mat-radio-button value="user">User</mat-radio-button></mat-radio-group></p>
+              </td>
+          <td> <p>
+                <mat-radio-group  formControlName="role"  aria-label="Select an option">
+                  <mat-radio-button value="vendor">Vendor</mat-radio-button> </mat-radio-group>
+              </p></td>
+      </tr> 
+     
+    </table>
+    <div class="loginbtn" >
+        <button mat-raised-button color="primary" (click)="register()"> SIGN UP</button></div>
+    </form>
+  </mat-card-content>
+</mat-card>
+</div>

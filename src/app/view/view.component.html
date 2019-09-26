@@ -1,0 +1,19 @@
+
+
+<div fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px">
+    <div fxFlex="5%" ></div>
+    <div fxFlex="35%" ><img class="cartImg" src="{{item.imagePath}}"></div>
+    <div  fxFlex="50%"><div >
+        <br><br>
+        <mat-card-title>Shirt</mat-card-title>
+        <p class="productdetail"> {{item.rating}}</p>
+        <p class="priceTag">Price: <mat-icon></mat-icon>{{item.price |currency:'&#8377;'}}</p>
+        <button mat-raised-button class="viewbtn" (click)="addcart(item)" >ADD TO CART</button>&nbsp;&nbsp;
+        <!-- <button mat-raised-button color="primary">BUY</button> -->
+        <br>
+        <br>
+        <p><mat-icon class="tagIcon">loyalty</mat-icon> Special PriceGet extra 9% off (price inclusive of discount)T&C</p>
+        <p><mat-icon class="tagIcon">loyalty</mat-icon> Bank Offer10% Instant Discount on ICICI Bank Credit and Debit CardsT&C</p>
+        <p><mat-icon class="tagIcon">loyalty</mat-icon> Bank OfferExtra 5% off* with Axis Bank Buzz Credit CardT&C</p>
+      </div></div>
+  </div>

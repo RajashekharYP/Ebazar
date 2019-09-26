@@ -1,0 +1,28 @@
+<form [formGroup] = "CategoryGroup" >
+  <mat-card>
+<mat-form-field>
+  
+  <mat-label>Category</mat-label>
+  <mat-select formControlName="categorySearch" >
+    
+    <mat-option value="Mens" >Mens</mat-option>
+    <mat-option value="Women" >Women`s</mat-option>
+    <mat-option value="kids" >Kids </mat-option>
+  </mat-select>
+  <br><br>
+
+</mat-form-field>
+<!-- <mat-divider></mat-divider> -->
+<br>
+<mat-label>Price:</mat-label>
+<mat-slider step="50" formControlName="minValue" [min]="5000" [max]="10000"></mat-slider><br>
+<span style="padding-left:25%;">{{CategoryGroup.value.minValue}}</span>
+<span style="float:right;">{{CategoryGroup.value.maxValue}}</span>
+<mat-divider></mat-divider>
+<br><br>
+<input id="checkbox1" type="checkbox" formControlName="checkbox4" >4<mat-icon  class="checkboxstar">star</mat-icon>& Above <br>
+<input id="checkbox2" type="checkbox" formControlName="checkbox3" >3<mat-icon  class="checkboxstar">star</mat-icon>& Above <br>
+<input id="checkbox3" type="checkbox" formControlName="checkbox2" >2<mat-icon  class="checkboxstar">star</mat-icon>& Above <br>
+<input id="checkbox4" type="checkbox" formControlName="checkbox1" >1<mat-icon  class="checkboxstar">star</mat-icon>& Above <br>
+</mat-card>
+</form>

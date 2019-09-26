@@ -1,0 +1,16 @@
+.left{
+    text-align: left;
+    color: chocolate;
+} 
+.menuleft{ float: left;
+width: 50%}
+
+.menuright{    
+float: right; 
+text-align: right;
+width: 50%
+}
+.menuright > span{
+    padding:0px 2%;
+} 
+.clear{ clear:both;}
