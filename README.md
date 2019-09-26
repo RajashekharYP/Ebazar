@@ -2,8 +2,6 @@
 Home Page Looks Something Like This:
 <img src="homePage1.JPG">
 
-Cart Page Looks :
-<img src="cart.JPG">
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
 
@@ -15,6 +13,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+Cart Page Looks :
+<img src="cart.JPG">
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
