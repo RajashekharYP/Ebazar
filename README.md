@@ -1,4 +1,5 @@
 # Ebazar
+This is a prototype project for simple e-commerce application for begginers to uderstand the basic concepts of Angular. 
 Home Page Looks Something Like This:
 <img src="homePage1.JPG">
 
